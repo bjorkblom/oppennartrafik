@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Nättraby</name>
+	<gx:CascadingStyle kml:id="__managed_style_0BAB3332C828CF3530D1">
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/rpc/cc/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>3.4</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_1C40D1557928CF3530D0">
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/rpc/cc/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>2.26667</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_0031411ED128CF3530D0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_1C40D1557928CF3530D0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_0BAB3332C828CF3530D1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark id="040C6EEAD228CF3530CF">
+		<name>Nättraby</name>
+		<LookAt>
+			<longitude>15.5431011884385</longitude>
+			<latitude>56.1960717263264</latitude>
+			<altitude>9.622617847152226</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>5302.030123648583</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0031411ED128CF3530D0</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						15.53352606181091,56.20781589540346,7.983579283491935 15.52524261728461,56.20628766334261,4.677213768834399 15.52212671394383,56.20432615969756,4.670917627159097 15.5211850242348,56.20307457744305,5.354502567742765 15.52562324838185,56.20303920245108,11.13252785530265 15.52750686590173,56.1990002406316,26.28774236760338 15.52221514719247,56.19645303951255,12.98969451857513 15.52077174695991,56.19262328794365,14.91407549993491 15.52692736547774,56.18951239290026,10.17533240111672 15.53045134223677,56.18921653499823,11.56969930657714 15.53219449625787,56.1896052203497,15.93028653736488 15.53165123370487,56.19164417268502,12.43474977282517 15.53464732088116,56.19072986060706,20.10391548388237 15.5380533465624,56.19177347193045,13.84539190961863 15.53669242633517,56.1927472309788,5.917396099769059 15.53850336013916,56.19354188299918,3.819762488218643 15.53870581914788,56.1963275574835,1.913821960835038 15.5344703532951,56.1963271385012,5.979104453507665 15.53710067261429,56.19931026934042,6.573978407140022 15.54082969318712,56.1988829958796,8.932148951605392 15.54371412891978,56.20009238323451,5.634936189451281 15.54047389023126,56.20191762335732,12.42830975150521 15.54093199665068,56.2036519673473,10.1709669164043 15.54251422285474,56.20585177776525,10.46221512477327 15.54182520737974,56.20710031558019,10.765212644488 15.53877140839687,56.20765912609436,21.31658345376592 15.53634469669259,56.20809654817679,15.80174803028735 15.53352606181091,56.20781589540346,7.983579283491935 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>
