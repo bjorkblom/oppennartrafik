@@ -48,3 +48,10 @@ Thumbs.db
 *.mov
 *.wmv
 
+bin
+obj
+.vs
+*.ncrunchsolution*
+Blekingetrafiken.OppenNartrafik/Properties/PublishProfiles
+_NCrunch_Blekingetrafiken.OppenNartrafik
+*.csproj.user
