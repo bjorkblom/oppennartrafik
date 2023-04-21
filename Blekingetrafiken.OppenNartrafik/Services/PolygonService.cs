@@ -66,32 +66,30 @@ namespace Blekingetrafiken.OppenNartrafik.Services
 
         public static bool IsPointInsidePolygon(Coordinate point, Polygon polygon)
         {
-            int count = 0;
-            double x1, x2, y1, y2;
+            if (polygon.Coordinates.Count < 3)
+            {
+                throw new ArgumentException("Polygon must have at least three vertices.");
+            }
+
+            int intersectionCount = 0;
+            float x1, x2, y1, y2;
 
             for (int i = 0; i < polygon.Coordinates.Count; i++)
             {
-                x1 = polygon.Coordinates[i].Longitude;
-                y1 = polygon.Coordinates[i].Latitude;
+                x1 = (float)polygon.Coordinates[i].Longitude;
+                y1 = (float)polygon.Coordinates[i].Latitude;
 
-                if (i == polygon.Coordinates.Count - 1)
-                {
-                    x2 = polygon.Coordinates[0].Longitude;
-                    y2 = polygon.Coordinates[0].Latitude;
-                }
-                else
-                {
-                    x2 = polygon.Coordinates[i + 1].Longitude;
-                    y2 = polygon.Coordinates[i + 1].Latitude;
-                }
+                int nextIndex = (i + 1) % polygon.Coordinates.Count;
+                x2 = (float)polygon.Coordinates[nextIndex].Longitude;
+                y2 = (float)polygon.Coordinates[nextIndex].Latitude;
 
                 if (((y1 > point.Latitude) != (y2 > point.Latitude)) && (point.Longitude < (x2 - x1) * (point.Latitude - y1) / (y2 - y1) + x1))
                 {
-                    count++;
+                    intersectionCount++;
                 }
             }
 
-            return (count % 2 == 1);
+            return (intersectionCount % 2 == 1);
         }
     }
 }
